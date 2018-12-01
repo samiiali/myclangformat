@@ -1,0 +1,64 @@
+---
+# clang-format version 8.0.0 (tags/google/stable/2018-10-04)
+Language:        Cpp
+BasedOnStyle:  Mozilla
+AlignAfterOpenBracket: AlwaysBreak
+AlignOperands:   false
+#
+# If the function declaration doesn’t fit on a line, allow putting all
+# parameters of a function declaration onto the next line even if
+# BinPackParameters is false.
+#
+# The following is deprecated. Use AlwaysBreakAfterReturnType and
+# PenaltyReturnTypeOnItsOwnLine.
+#
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Mozilla
+#
+# Seems to be obsolete
+#
+BreakBeforeInheritanceComma: false
+BreakInheritanceList: AfterColon
+BreakBeforeTernaryOperators: true
+#
+# This seems obsolete too.
+#
+BreakConstructorInitializersBeforeComma: false
+BreakConstructorInitializers: BeforeColon
+BreakAfterJavaFieldAnnotations: false
+BreakStringLiterals: true
+ColumnLimit:     80
+CommentPragmas:  '^ IWYU pragma:'
+CompactNamespaces: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: true
+ExperimentalAutoDetectBinPacking: false
+FixNamespaceComments: true
+IndentCaseLabels: true
+IndentWidth:     4
+IndentWrappedFunctionNames: false
+ReflowComments:  true
+SortIncludes:    false
+SortUsingDeclarations: true
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+#
+# Seems to be obsolete.
+#
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+#
+# Seems to be obsolete.
+#
+SpaceBeforeRangeBasedForLoopColon: true
+Standard:        Cpp11
+TabWidth:        4
+...
+
